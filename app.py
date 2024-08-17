@@ -28,13 +28,14 @@ def get_base64_image(image_path):
 # Veritabanı bağlantısı
 def connect_to_database():
     connection = pyodbc.connect(
-        'DRIVER={ODBC Driver 17 for SQL Server};'
-        'SERVER=DEFNE\SQLEXPRESS;'  # Sunucu adı
-        'DATABASE=Chatbot;'  # Veritabanı adı
-        'UID=defne2;'  # SQL Server kullanıcı adı
-        'PWD=Ac12345;'  # SQL Server şifresi
+        r'DRIVER={ODBC Driver 17 for SQL Server};'
+        r'SERVER=DEFNE\SQLEXPRESS;'  # Sunucu adı
+        r'DATABASE=Chatbot;'  # Veritabanı adı
+        r'UID=defne2;'  # SQL Server kullanıcı adı
+        r'PWD=Ac12345;'  # SQL Server şifresi
     )
     return connection
+
 
 # Veritabanından bilgi çekme
 def fetch_information(query):
