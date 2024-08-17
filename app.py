@@ -29,14 +29,12 @@ def get_base64_image(image_path):
 def connect_to_database():
     connection = pyodbc.connect(
         r'DRIVER={ODBC Driver 17 for SQL Server};'
-        r'SERVER=localhost\SQLEXPRESS;'  # Sunucu adı
+        r'SERVER=DEFNE\SQLEXPRESS,1433;'  # Sunucu adı ve port numarası
         r'DATABASE=Chatbot;'  # Veritabanı adı
         r'UID=defne2;'  # SQL Server kullanıcı adı
         r'PWD=Ac12345;'  # SQL Server şifresi
     )
     return connection
-
-
 
 # Veritabanından bilgi çekme
 def fetch_information(query):
