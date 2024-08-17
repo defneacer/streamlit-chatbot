@@ -1,7 +1,6 @@
-streamlit==1.26.0
-transformers==4.33.2
-pyodbc==4.0.35
-typing-extensions==4.8.0
-streamlit-components==0.1.5
+streamlit>=1.0
+transformers>=4.0
+torch>=1.7
+pyodbc>=4.0.30
 
 
