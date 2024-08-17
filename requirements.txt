@@ -1,7 +1,7 @@
 streamlit==1.26.0
 transformers==4.33.2
 pyodbc==4.0.35
-dataclasses==0.6
 typing-extensions==4.8.0
 streamlit-components==0.1.5
+
 
